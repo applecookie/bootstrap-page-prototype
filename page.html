@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+</head>
+
+<body>
+    <!--первое модально окно "редактировать"-->
+    <div class="modal fade" id="edit-modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h4>Редактировать</h4>
+                </div>
+                <div class="modal-body">
+                    <form role="form">
+                        <div class="row">
+                            <div class="form-group col-xs-6">
+                                <label for="edit-department">Управление</label>
+                                <select name="" id="edit-department" class="form-control">
+                                    <option value="">выбрать</option>
+                                    <option value="">Новое управление</option>
+                                    <option value="">Управление1</option>
+                                    <option value="">Управление2</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-xs-6">
+                                <label for="edit-name">Название</label>
+                                <input type="text" id="edit-name" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="edit-manager">Руководитель</label>
+                            <select name="" id="edit-manager" class="form-control">
+                                <option></option>
+                                <option>Вася</option>
+                                <option>Петя</option>
+                                <option>Саша</option>
+                                <option>Коля</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Сохранить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--второее модально окно "добавить новый"-->
+    <div class="modal fade" id="add-new-modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h4>Редактировать</h4>
+                </div>
+                <div class="modal-body">
+                    <form role="form">
+                        <div class="row">
+                            <div class="form-group col-xs-6">
+                                <label for="add-new-department">Управление</label>
+                                <select name="" id="add-new-department" class="form-control">
+                                    <option value="">выбрать</option>
+                                    <option value="">Новое управление</option>
+                                    <option value="">Управление1</option>
+                                    <option value="">Управление2</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-xs-6">
+                                <label for="add-new-name">Название</label>
+                                <input type="text" id="add-new-name" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="add-new-manager">Руководитель</label>
+                            <select name="" id="add-new-manager" class="form-control">
+                                <option></option>
+                                <option>Вася</option>
+                                <option>Петя</option>
+                                <option>Саша</option>
+                                <option>Коля</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Сохранить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--хедер фиксированный-->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">rossur.ru</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#">Поддержка</a>
+                    </li>
+                    <li>
+                        <a href="#">Сотрудники</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">email@email.ru
+                                                    <span class="caret"></span>
+                                                </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Настройка</a></li>
+                            <li><a href="#">Выход</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--хедер статичный-->
+    <div class="navbar navbar-default navbar-static-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#search-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <h2>Структура компании</h2>
+            </div>
+            <div class="collapse navbar-collapse" id="search-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Создать
+                                        <span class="caret"></span>
+                                                    </a>
+                        <ul class="dropdown-menu">
+                            <li><a href=" # ">Письмо</a></li>
+                            <li><a href="# ">Напоминание</a></li>
+                            <li><a href="# ">Задачу</a></li>
+                            <li role="separator " class="divider"></li>
+                            <li><a href="# ">Управление</a></li>
+                            <li><a href="# ">Отдел</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="navbar-form navbar-right" role="search">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Поиск">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--контент-->
+    <div class="container">
+        <!--sidebar-->
+        <div class="col-md-3 col-sm-4 sidebar">
+            <ul class="nav nav-pills nav-stacked">
+                <li class="active"><a href="">Все</a></li>
+                <li><a href="">Задачи</a></li>
+                <li><a href="">Плановые работы</a></li>
+                <li><a href="">Оповещения</a></li>
+                <li><a href="">Письма</a></li>
+                <li><a href="">Архив</a></li>
+            </ul>
+            <ul id="accordion" class="nav nav-pills nav-stacked">
+                <li><a data-toggle="collapse" data-parent="#accordion" href="#collapse-1">Работа с данными
+                   <span class="caret"></span></a>
+                    <ul id="collapse-1" class="nav nav-pills nav-stacked collapse ">
+                        <li>
+                            <a href="#">Здания</a>
+                        </li>
+                        <li>
+                            <a href="#">Помещения</a>
+                        </li>
+                        <li>
+                            <a href="#">Лица</a>
+                        </li>
+                    </ul>
+                </li>
+                <!--настройка системы-->
+                <li><a data-toggle="collapse" data-parent="#accordion" href="#collapse-2">Настройки системы
+                   <span class="caret"></span></a>
+                    <ul id="collapse-2" class="nav nav-pills nav-stacked collapse ">
+                        <li>
+                            <a href="#">Конфигуратор ролей</a>
+                        </li>
+                        <li>
+                            <a href="#">Сотрудники</a>
+                        </li>
+                        <li>
+                            <a href="#">Отделы</a>
+                        </li>
+                        <li>
+                            <a href="#">Отделения</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+        </div>
+        <!--main-->
+        <div class="col-md-9 col-sm-8 content">
+            <div class="row">
+                <h3>Управление1</h3>
+                <div class="row">
+                    <div class="col-md-3 col-xs-6">
+                        <div class="inner-block">
+                            <button type="button" class="close">×</button>
+                            <h4>Отдел 1</h4>
+                            <h5>Руководитель:</h5>
+                            <p>Иван Соранов Пучка</p>
+                            <a href="#edit-modal" data-toggle="modal">Редактировать</a>
+                            <button class="btn btn-default">Сотрудники</button>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xs-6">
+                        <div class="inner-block">
+                            <button type="button" class="close">×</button>
+                            <h4>Отдел 1</h4>
+                            <h5>Руководитель:</h5>
+                            <p>Иван Соранов Пучка</p>
+                            <a href="#edit-modal" data-toggle="modal">Редактировать</a>
+                            <button class="btn btn-default">Сотрудники</button>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xs-6">
+                        <div class="inner-block">
+                            <button type="button" class="close">×</button>
+                            <h4>Отдел 1</h4>
+                            <h5>Руководитель:</h5>
+                            <p>Иван Соранов Пучка</p>
+                            <a href="#edit-modal" data-toggle="modal">Редактировать</a>
+                            <button class="btn btn-default">Сотрудники</button>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xs-6 add-block" data-toggle="modal" data-target="#add-new-modal">
+                        <span class="glyphicon glyphicon-plus"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <h3>Управление1</h3>
+                <div class="row">
+                    <div class="col-md-3 col-xs-6">
+                        <div class="inner-block">
+                            <button type="button" class="close">×</button>
+                            <h4>Отдел 1</h4>
+                            <h5>Руководитель:</h5>
+                            <p>Иван Соранов Пучка</p>
+                            <a href="#edit-modal" data-toggle="modal">Редактировать</a>
+                            <button class="btn btn-default">Сотрудники</button>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xs-6">
+                        <div class="inner-block">
+                            <button type="button" class="close">×</button>
+                            <h4>Отдел 1</h4>
+                            <h5>Руководитель:</h5>
+                            <p>Иван Соранов Пучка</p>
+                            <a href="#edit-modal" data-toggle="modal">Редактировать</a>
+                            <button class="btn btn-default">Сотрудники</button>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xs-6">
+                        <div class="inner-block">
+                            <button type="button" class="close">×</button>
+                            <h4>Отдел 1</h4>
+                            <h5>Руководитель:</h5>
+                            <p>Иван Соранов Пучка</p>
+                            <a href="#edit-modal" data-toggle="modal">Редактировать</a>
+                            <button class="btn btn-default">Сотрудники</button>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xs-6 add-block" data-toggle="modal" data-target="#add-new-modal">
+                        <span class="glyphicon glyphicon-plus"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <h3>Управление1</h3>
+                <div class="row">
+                    <div class="col-md-3 col-xs-6">
+                        <div class="inner-block">
+                            <button type="button" class="close">×</button>
+                            <h4>Отдел 1</h4>
+                            <h5>Руководитель:</h5>
+                            <p>Иван Соранов Пучка</p>
+                            <a href="#edit-modal" data-toggle="modal">Редактировать</a>
+                            <button class="btn btn-default">Сотрудники</button>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xs-6">
+                        <div class="inner-block">
+                            <button type="button" class="close">×</button>
+                            <h4>Отдел 1</h4>
+                            <h5>Руководитель:</h5>
+                            <p>Иван Соранов Пучка</p>
+                            <a href="#edit-modal" data-toggle="modal">Редактировать</a>
+                            <button class="btn btn-default">Сотрудники</button>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xs-6">
+                        <div class="inner-block">
+                            <button type="button" class="close">×</button>
+                            <h4>Отдел 1</h4>
+                            <h5>Руководитель:</h5>
+                            <p>Иван Соранов Пучка</p>
+                            <a href="#edit-modal" data-toggle="modal">Редактировать</a>
+                            <button class="btn btn-default">Сотрудники</button>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xs-6 add-block" data-toggle="modal" data-target="#add-new-modal">
+                        <span class="glyphicon glyphicon-plus"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js "></script>
+    <script src="js/bootstrap.min.js "></script>
+</body>
+
+</html>

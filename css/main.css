@@ -1,0 +1,62 @@
+body{
+    padding-top: 50px;
+}
+
+.navbar-header>h2 {
+    line-height: 50px;
+    margin: 0;
+}
+
+.sidebar {
+    padding-left: 0;
+}
+
+#accordion {
+    margin-top: 15px;
+}
+
+ul[id|="collapse"] {
+    background: #fffbfb;
+}
+
+.content h3 {
+    border-bottom: 1px solid #eee;
+    margin: 0;
+    margin-bottom: 15px
+}
+
+.content h3+.row {
+    margin: 0;
+    position: relative;
+    /*вариант для растягивания последнего блока с "+"
+    display: flex;*/
+}
+
+.content div[class|="col"] {
+    padding: 0;
+}
+.inner-block{
+    border: 1px solid #eee;
+    margin-right: 10px;
+    padding: 10px;
+}
+.inner-block h4{
+    margin: 0;
+    margin-bottom: 15px;
+}
+.inner-block .btn{
+    margin-top: 15px;
+    width: 100%;
+}
+.add-block{
+    line-height: 180px;/*статичная высота блоков=вертикальное выравнивание*/
+    text-align: center;
+    border: 1px solid #eee;
+    font-size: 40px;
+    cursor: pointer;
+     /*выравнивание "+" по центру; неплохим и рабочим вариантом бы было использовать картинку на background вместо флексбокса
+    display: flex;
+    justify-content: center;
+    align-items: center;*/
+}
+    
